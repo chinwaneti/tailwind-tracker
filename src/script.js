@@ -20,15 +20,17 @@ body.append(unordered)
 unordered.append(list)
 
 unordered.setAttribute('class', 'food drink')
-const myName = 'Chidinma Barbie Nwaneti'
+const myName = 'chidinma Barbie Nwaneti'
 const x = 'the quick brown fox jumps over the lazy dog'
 
-list.textContent = `my name is ${myName.toUpperCase()}, and it has ${myName.length} characters. my name contains a country
-named ${myName.slice(9,15)} I can replace all a with l ${myName.replaceAll('a', 'o')}`
+// list.textContent = `my name is ${myName}, and it has ${myName.length} characters. my name contains a country
+// named ${myName.slice(9,15)} I can replace all a with l ${myName.replaceAll('a', 'o')} does my name start with c, ${myName.startsWith('c')}. the last character of my name is ${myName[myName.length-1]}`
 
 list.textContent = x[x.indexOf('h')] + x[x.indexOf('e')] + x[x.indexOf('l')] + x[x.indexOf('l')] + x[x.indexOf('o')] +
     x[x.indexOf(' ')] + x[x.indexOf('u')] + x[x.indexOf('n')] + x[x.indexOf('i')] + x[x.indexOf('v')] +
     x[x.indexOf('e')] + x[x.indexOf('l')]
+
+list.textContent = x.split(' ')
 
 const food = document.getElementsByClassName('food')
 const drink = document.getElementsByClassName('drink')
